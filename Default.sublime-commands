@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Select all by current scope",
+		"command": "select_all_by_current_scope"
+	}
+]

@@ -8,8 +8,6 @@ class SelectAllByCurrentScope(sublime_plugin.TextCommand):
 		sel = view.sel()
 		scope_name = None
 
-		print(view)
-		
 		(row, col) = view.rowcol(sel[0].begin())
 		point = view.text_point(row, col)
 		point_scope = view.scope_name(point)

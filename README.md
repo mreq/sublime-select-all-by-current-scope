@@ -47,7 +47,7 @@ Say you have a knitr/Sweave file with embedded R code. You might want to select 
 ]
 ```
 
-How about all the javascript code from an HTML file? Src of all images/script tags/stylesheets in a HTML file? Bold text from a Markdown file? That's matched by default:
+How about all the javascript code from an HTML file? Bold text from a Markdown file? That's matched by default:
 ```json
 [
   {
