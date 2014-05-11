@@ -12,22 +12,22 @@ Example keybindings
 
 Selects everything matching current scope:
 ```json
-{
+[
   {
     "keys": ["ctrl+alt+shift+a"],
     "command": "select_all_by_current_scope"
   }
-}
+]
 ```
 Selects everything matching the first piece of current scope, which contains the word `embedded`:
 ```json
-{
+[
   {
     "keys": ["ctrl+alt+shift+a"],
     "command": "select_all_by_current_scope",
     "args": { "scope_must_match": "embedded" }
   }
-}
+]
 ```
 
 Usecase
@@ -35,7 +35,7 @@ Usecase
 
 Say you have a knitr/Sweave file with embedded R code. You might want to select all the R code. For that, I have the following keybinding:
 ```json
-{
+[
   {
     "keys": ["ctrl+alt+shift+a"],
     "command": "select_all_by_current_scope",
@@ -44,15 +44,15 @@ Say you have a knitr/Sweave file with embedded R code. You might want to select 
       { "key": "selector", "operator": "equal", "operand": "source.r.embedded.knitr" }
     ]
   }
-}
+]
 ```
 
 How about all the javascript code from an HTML file? Src of all images/script tags/stylesheets in a HTML file? Bold text from a Markdown file? That's matched by default:
 ```json
-{
+[
   {
     "keys": ["ctrl+alt+shift+a"],
     "command": "select_all_by_current_scope"
   }
-}
+]
 ```
