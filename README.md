@@ -40,7 +40,7 @@ Say you have a knitr/Sweave file with embedded R code. You might want to select 
     "keys": ["ctrl+alt+shift+a"],
     "command": "select_all_by_current_scope",
     "args": { "scope_must_match": "embedded" }
-    "context":[
+    "context": [
       { "key": "selector", "operator": "equal", "operand": "source.r.embedded.knitr" }
     ]
   }
